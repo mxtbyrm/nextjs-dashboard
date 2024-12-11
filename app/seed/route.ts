@@ -102,7 +102,10 @@ const client = db.connect();
 // }
 
 export async function GET() {
-  return Response.json({'delete this line and uncomment codes'})
+  return Response.json(
+    { message: "delete this line and uncomment codes" },
+    { status: 200 },
+  );
   // try {
   //   await client.sql`BEGIN`;
   //   await seedUsers();
